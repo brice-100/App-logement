@@ -32,12 +32,12 @@ const Navbar = () => {
            <button className='md:hidden text-2xl' onClick={() => setOpen(!open)}>
          ☰
       </button>
-     {utilisateur && (
-      <div className="md:hidden absolute top-16 left-0  flex flex-col p-6 space-y-6 bg-white 
+     {open && (
+      <div className="md:hidden absolute top-16 left-0  flex flex-col p-6 space-y-6 bg-gray-400 rounded
       transform transition-transform duration-5000 translate-x-0 ">
-         <Link to="/" className="hover:underline px-4 py-2 rounded-full font-semibold border">Accueil</Link>
-         <Link to="/favoris" className="hover:underline px-4 py-2 rounded-full font-semibold border">Favoris</Link>
-        <Link to="/messagerie" className="hover:underline px-4 py-2 rounded-full font-semibold border ">Messagerie</Link>
+         <Link to="/" className="hover:underline px-4 py-2 rounded-full font-semibold border bg-blue-400">Accueil</Link>
+         <Link to="/favoris" className="hover:underline px-4 py-2 rounded-full font-semibold border  bg-blue-400">Favoris</Link>
+        <Link to="/messagerie" className="hover:underline px-4 py-2 rounded-full font-semibold border  bg-blue-400">Messagerie</Link>
       </div>
      )}
 
