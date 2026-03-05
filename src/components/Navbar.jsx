@@ -38,11 +38,12 @@ const Navbar = () => {
          <Link to="/" className="hover:underline px-4 py-2 rounded-full font-semibold border bg-blue-400">Accueil</Link>
          <Link to="/favoris" className="hover:underline px-4 py-2 rounded-full font-semibold border  bg-blue-400">Favoris</Link>
         <Link to="/messagerie" className="hover:underline px-4 py-2 rounded-full font-semibold border  bg-blue-400">Messagerie</Link>
+        <Link to="/connexion" className="hover:underline px-4 py-2 rounded-full font-semibold border  bg-blue-400">Connexion</Link>
       </div>
      )}
 
      {utilisateur?.role === 'proprietaire' &&  (
-      <Link to="/dashboard" className="hover:underline">Dashboard</Link>
+      <Link to="/dashboard" className="hover:underline hidden md:block">Dashboard</Link>
      )}
         {utilisateur ? (
           <div className="flex items-center gap-3">
